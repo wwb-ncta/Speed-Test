@@ -3,8 +3,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
     class="openSpeedtestApp">
 	<symbol id="logo" viewBox="0 0 262.79 50.38">
-		<a target="_blank" href="http://openspeedtest.com?ref=Self-Hosted-Intro&amp;run=5">
-			<g>
+		<g>
 				<path
             d="M39.77,15.17A27,27,0,0,0,34,6.71c-2.49-2.13-4.33-2.13-6.68,0a15.2,15.2,0,0,0-2.55,3.06c-5.4,8.59-9.17,17.68-9.31,28a22.39,22.39,0,0,0,.5,5.33C16.83,46.7,19,48,22.66,47.2a32.27,32.27,0,0,0,7-2.56c-1.78,2.63-6.47,5.4-9.38,5.68a7.44,7.44,0,0,1-7.46-3.62,17.59,17.59,0,0,1-2.62-9.16A41.31,41.31,0,0,1,13.42,19C15.55,14.1,18,9.41,21.66,5.51a18.35,18.35,0,0,1,3.91-3.2C29.33.18,33,.82,35.72,4.09a19.33,19.33,0,0,1,4,9.94Z"
             style="fill: #4d4d4d" />
@@ -66,8 +65,6 @@
             style="fill: #4d4d4d" />
 			</g>
 			<rect fill="transparent" x="0" y="0" width="265" height="60" />
-			<title>OpenSpeedTest™️</title>
-		</a>
 	</symbol>
 	<symbol id="mainGaugebg" viewBox="0 0 295.93 270.18">
 		<path fill="none" d="M64.32,256.41a137,137,0,1,1,192.09-24.8l-.07.09a134.45,134.45,0,0,1-24.71,24.71" />
@@ -80,12 +77,12 @@
 	</symbol>
 	<symbol id="oDoMeter" viewBox="0 0 295.93 270.18">
 		<text transform="translate(76.34 264.28) scale(0.9 1)">0</text>
-		<text transform="translate(23.81 164.6) scale(0.9 1)">.5</text>
-		<text transform="translate(50.01 80.11) scale(0.9 1)">1</text>
-		<text transform="translate(140.58 36.04) scale(0.9 1)">10</text>
-		<text transform="translate(220.43 79.11) scale(0.9 1)">100</text>
-		<text transform="translate(246.71 164.6) scale(0.9 1)">500</text>
-		<text id="oDoTopSpeed" class="oDoTop-Speed" transform="translate(220.71 265.99) scale(0.9 1)">1000+</text>
+		<text transform="translate(23.81 164.6) scale(0.9 1)">100</text>
+		<text transform="translate(50.01 80.11) scale(0.9 1)">200</text>
+		<text transform="translate(140.58 36.04) scale(0.9 1)">500</text>
+		<text transform="translate(206.43 79.11) scale(0.9 1)">2500</text>
+		<text transform="translate(224.71 164.6) scale(0.9 1)">5000</text>
+		<text id="oDoTopSpeed" class="oDoTop-Speed" transform="translate(198.71 265.99) scale(0.9 1)">7500</text>
 		<text id="oDoLiveSpeed" class="oDoLive-Speed" transform="translate(150 150) scale(1 1)">...</text>
 		<text id="oDoLiveStatus" class="oDoLive-Status" transform="translate(151 170) scale(1 1)"></text>
 	</symbol>
@@ -209,25 +206,22 @@
 		<line x1="5" y1="5" x2="405" y2="5"></line>
 	</symbol>
 	<symbol id="ConnectError" viewBox="0 0 489.6 489.6">
-		<a target="_blank" href="https://openspeedtest.com/FAQ.php?ref=NetworkError">
+		<g>
 			<g>
-				<g>
-					<path d="M179.6,235.6c-33.7,10.3-65.5,28.5-92.2,55.1l46.6,46.6c13.9-13.9,30.1-24.8,47.6-32.5L179.6,235.6z" />
-					<path d="M175.8,109C111.3,122,49.9,153.4,0,203.3l46.6,46.6c37.5-37.5,83.1-61.9,131.2-73.7L175.8,109z" />
-					<path d="M313.8,109l-2,67.3c48.1,11.8,93.7,36.2,131.2,73.7l46.6-46.6C439.8,153.4,378.3,122,313.8,109z" />
-					<path d="M307.9,304.8c17.5,7.7,33.7,18.6,47.7,32.6l46.6-46.6c-26.6-26.6-58.5-44.9-92.2-55.2L307.9,304.8z" />
-				</g>
-				<circle cx="244.8" cy="403.2" r="40" />
-				<g>
-					<path d="M260.6,330.4h-31.7c-8.3,0-15.1-6.6-15.3-14.9L206,62.2c-0.3-8.6,6.7-15.8,15.3-15.8h47c8.6,0,15.6,7.1,15.3,15.8
-                 l-7.7,253.3C275.7,323.8,268.9,330.4,260.6,330.4z" />
-				</g>
+				<path d="M179.6,235.6c-33.7,10.3-65.5,28.5-92.2,55.1l46.6,46.6c13.9-13.9,30.1-24.8,47.6-32.5L179.6,235.6z" />
+				<path d="M175.8,109C111.3,122,49.9,153.4,0,203.3l46.6,46.6c37.5-37.5,83.1-61.9,131.2-73.7L175.8,109z" />
+				<path d="M313.8,109l-2,67.3c48.1,11.8,93.7,36.2,131.2,73.7l46.6-46.6C439.8,153.4,378.3,122,313.8,109z" />
+				<path d="M307.9,304.8c17.5,7.7,33.7,18.6,47.7,32.6l46.6-46.6c-26.6-26.6-58.5-44.9-92.2-55.2L307.9,304.8z" />
 			</g>
-			<title>Network Error</title>
-		</a>
+			<circle cx="244.8" cy="403.2" r="40" />
+			<g>
+				<path d="M260.6,330.4h-31.7c-8.3,0-15.1-6.6-15.3-14.9L206,62.2c-0.3-8.6,6.7-15.8,15.3-15.8h47c8.6,0,15.6,7.1,15.3,15.8
+             l-7.7,253.3C275.7,323.8,268.9,330.4,260.6,330.4z" />
+			</g>
+		</g>
 	</symbol>
 	<symbol class="Your-IP" viewBox="0 0 300 299.12">
-		<text id="YourIP" transform="translate(140 228) scale(.8 .8)">SpeedTest by OpenSpeedTest™️</text>
+		<text id="YourIP" transform="translate(140 228) scale(.8 .8)"></text>
 	</symbol>
 	<symbol id="light" viewBox="0 0 512 512">
 		<g>
@@ -278,7 +272,7 @@
 		</symbol>
 		<a id="resultsData">
 			<svg class="Desktop" viewBox="0 0 586 346">
-				<title id="title1">HTML5 Network Performance Estimation Tool. by OpenSpeedTest™</title>
+				<title id="title1">HTML5 Network Performance Estimation Tool.</title>
 				<g id="UI-Desk">
 					<use id="mainGaugebg-Desk" class="main-Gaugebg" xlink:href="#mainGaugebg" x="10.28" y="36.11" width="273.94" height="245.39"></use>
 					<use id="mainGaugeBlue-Desk" class="main-GaugeBlue" xlink:href="#mainGaugeBlue" x="10.28" y="36.11" width="273.94" height="245.39"></use>
@@ -385,7 +379,7 @@
 				</g>
 			</svg>
 			<svg class="Mobile" viewBox="0 0 295.9 363.3">
-				<title id="title1">HTML5 Network Performance Estimation Tool. by OpenSpeedTest™</title>
+				<title id="title1">HTML5 Network Performance Estimation Tool.</title>
 				<g id="UI-Mob">
 					<use id="mainGaugebg-Mob" class="main-Gaugebg" xlink:href="#mainGaugebg" x="11.18" y="12" width="273.94" height="245.39"></use>
 					<use id="mainGaugeBlue-Mob" class="main-GaugeBlue" xlink:href="#mainGaugeBlue" x="11.18" y="12" width="273.94" height="245.39"></use>
@@ -436,7 +430,6 @@
 				<g id="intro-Mob">
 					<use id="nightmode-Mob"  class="darkmode" onclick="toggleSkin()" xlink:href="#dark" x="10" y="25" width="30" height="30"></use>
 					<use id="daymode-Mob"  class="darkmode" onclick="toggleSkin()" xlink:href="#light" x="10" y="25" width="30" height="30"></use>
-					<use id="logo-Desk" xlink:href="#logo" x="38" y="110" width="218.8" height="50.22"></use>
 					<use id="deskStartMob" class="deskStart" xlink:href="#mainGaugebg" x="11.18" y="12" width="273.94" height="245.39"></use>
 					<use id="startButtonMob" class="startButton" xlink:href="#playButton" x="125" y="280" width="50.2" height="50.2">
 						<title id="title1">Click here to run a speed!</title>

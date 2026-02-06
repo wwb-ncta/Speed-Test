@@ -97,7 +97,7 @@ window.onload = function() {
     this.graphMob2 = _("graphMob2");
     this.graphMob1 = _("graphMob1");
     this.text = _("text");
-    this.scale = [{degree:680, value:0}, {degree:570, value:0.5}, {degree:460, value:1}, {degree:337, value:10}, {degree:220, value:100}, {degree:115, value:500}, {degree:0, value:1000},];
+    this.scale = [{degree:680, value:0}, {degree:567, value:100}, {degree:453, value:200}, {degree:340, value:500}, {degree:227, value:2500}, {degree:113, value:5000}, {degree:0, value:7500},];
     this.element = "";
     this.chart = "";
     this.polygon = "";
@@ -398,7 +398,7 @@ window.onload = function() {
         ShowData = 0;
       }
       this.oDoLiveSpeed.el.textContent = ShowData;
-      this.oDoTopSpeed.el.textContent = "1000+";
+      this.oDoTopSpeed.el.textContent = "7500";
       this.oDoTopSpeed.el.style.fontSize = "16.9px";
       this.oDoTopSpeed.el.style.fill = "gray";
       return;
@@ -425,13 +425,13 @@ window.onload = function() {
         var speed = ShowData.toFixed(1);
         this.oDoLiveSpeed.el.textContent = speed;
       }
-      if (ShowData <= 1000) {
-        this.oDoTopSpeed.el.textContent = "1000+";
+      if (ShowData <= 7500) {
+        this.oDoTopSpeed.el.textContent = "7500";
         this.oDoTopSpeed.el.style.fontSize = "16.9px";
         this.oDoTopSpeed.el.style.fill = "gray";
       }
-      if (ShowData >= 1010) {
-        this.oDoTopSpeed.el.textContent = Math.floor(ShowData / 1010) * 1000 + "+";
+      if (ShowData >= 7600) {
+        this.oDoTopSpeed.el.textContent = Math.floor(ShowData / 7500) * 7500 + "+";
         this.oDoTopSpeed.el.style.fill = "gray";
         this.oDoTopSpeed.el.style.fontSize = "17.2px";
       }
@@ -865,6 +865,15 @@ window.onload = function() {
     function hiEnter(e) {
       if (e.key === "Enter") {
         runTasks();
+        return;
+      }
+      if (e.key === "z" || e.key === "Z") {
+        Status = "Loaded";
+        stop = 0;
+        runTasks();
+      }
+      if (e.key === "x" || e.key === "X") {
+        runTasks();
       }
     }
     var showResult = 0;
@@ -997,8 +1006,8 @@ window.onload = function() {
           Status = "busy";
           clearInterval(Engine);
           var dummyElement = document.createElement("div");
-          dummyElement.innerHTML = '<a xlink:href="https://openspeedtest.com/FAQ.php?ref=NetworkError" style="cursor: pointer" target="_blank"></a>';
-          var htmlAnchorElement = dummyElement.querySelector("a");
+          dummyElement.innerHTML = "<span></span>";
+          var htmlAnchorElement = dummyElement.querySelector("span");
           Show.oDoLiveSpeed.el.textContent = "Network Error";
           var circleSVG = document.getElementById("oDoLiveSpeed");
           htmlAnchorElement.innerHTML = circleSVG.innerHTML;
@@ -1007,21 +1016,16 @@ window.onload = function() {
         if (Status === "SendR") {
           Show.showStatus("All done");
           var dummyElement = document.createElement("div");
-          dummyElement.innerHTML = '<a xlink:href="https://openspeedtest.com?ref=Self-Hosted-Outro&run=5" style="cursor: pointer" target="_blank"></a>';
-          var htmlAnchorElement = dummyElement.querySelector("a");
+          dummyElement.innerHTML = "<span></span>";
+          var htmlAnchorElement = dummyElement.querySelector("span");
           Show.oDoLiveSpeed.el.textContent = ost;
           var circleSVG = document.getElementById("oDoLiveSpeed");
           htmlAnchorElement.innerHTML = circleSVG.innerHTML;
           circleSVG.innerHTML = dummyElement.innerHTML;
           if (location.hostname != myname.toLowerCase() + com) {
-            saveTestData = "https://" + myname.toLowerCase() + com + "/results/show.php?" + "&d=" + downloadSpeed.toFixed(3) + "&u=" + uploadSpeed.toFixed(3) + "&p=" + pingEstimate + "&j=" + jitterEstimate + "&dd=" + (dataUsedfordl / 1048576).toFixed(3) + "&ud=" + (dataUsedforul / 1048576).toFixed(3) + "&ua=" + userAgentString;
-            saveTestData = encodeURI(saveTestData);
+            saveTestData = "#";
             var circleSVG2 = document.getElementById("resultsData");
             circleSVG2.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", saveTestData);
-            circleSVG2.setAttribute("target", "_blank");
-            if (saveData) {
-              ServerConnect(5);
-            }
           } else {
             ServerConnect(3);
           }
