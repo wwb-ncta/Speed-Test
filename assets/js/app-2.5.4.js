@@ -868,9 +868,7 @@ window.onload = function() {
         return;
       }
       if (e.key === "z" || e.key === "Z") {
-        Status = "Loaded";
-        stop = 0;
-        runTasks();
+        window.location.reload();
       }
       if (e.key === "x" || e.key === "X") {
         runTasks();
